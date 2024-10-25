@@ -1,0 +1,73 @@
+/* Ces règles CSS s'appliquent à tout le code */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+header, main, footer{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    color: #333333;
+}
+h1, h2, h3 h4{
+    font-family: "Lato", sans-serif;
+}
+/* Les règles CSS pour la partie du Header */
+header{
+    background-color: #17abb3;
+    color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.profile-pic{
+    margin-right: 350px;
+    flex-shrink: 0;
+}
+.profile-pic img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;         /* Pour un bord totalement arrondi le % est le plus accurate */
+    border: 5px solid #ffffff;
+}
+.header-content{
+    text-align: center;
+    margin-right: 50px;
+}
+h1{
+    margin: 0;
+    font-size: 3em;
+}
+header h2{
+    margin: 5px 0;
+    font-size: 1.3em;
+}
+.contact {                      /* Pour la partie contact il me semblait plus logique de créer une grille */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 15px ;
+    margin-top: 10px;
+}
+.contact address{                   /* Permet aux élements de suivre la grille */
+    display: contents;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+} 
+.contact-item img {
+    width: 29px;
+    height: 29px;
+    margin-right: 10px;
+}
