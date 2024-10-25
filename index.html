@@ -45,6 +45,54 @@
         </div>
     </header>
     <main>
+        <!-- On créé une première div pour définir la grille qui contriendra le principal de la page 'core' -->
+        <div class="grid-core">
+            <!-- Dans le même objectf on définit la partie gauche de la page avec ce quelle contient -->
+            <div class="left-side">
+                <section class="section-gauche">
+                    <!--  On utilise la balise <section></section> pour la sémantique puisque nous avons des titres -->
+                    <h2>Compétences</h2>
+                    <ul class="without-puce-1">
+                        <!-- J'ai utilisé <span></span> pour bien différencier les deux objets -->
+                        <li><span class="gras">HTML</span> <span class="stars"><img src="./assets/img/4-on-5-stars.png"
+                                    alt="stars raiting HTML 4/5"></span></li>
+                        <li><span class="gras">CSS</span> <span class="stars"><img src="./assets/img/4-on-5-stars.png"
+                                    alt="stars raiting CSS 4/5"></span></li>
+                        <li><span class="gras">Javascript</span> <span class="stars"><img
+                                    src="./assets/img/3-on-5-stars.png" alt="stars raiting Javascript 3/5"></span></li>
+                        <li><span class="gras">PHP</span> <span class="stars"><img src="./assets/img/0-5-stars.png"
+                                    alt="stars raiting PHP 0/5"></span></li>
+                    </ul>
+                </section>
+                <!-- Les deux listes without-puce et without-puce-1 étaient une seule et même class mais il me fallait d'autres règles CSS
+                pour pouvoir bien gérer liste without-puce-1 -->
+                <section class="section-gauche">
+                    <h2>Langues</h2>
+                    <ul class="without-puce">
+                        <li><span class="gras">Français</span> Langue maternelle</li>
+                        <li><span class="gras">Anglais</span> Scolaire</li>
+                        <li><span class="gras">Italien</span> Scolaire</li>
+                    </ul>
+                </section>
+                <section class="section-gauche">
+                    <h2>Qualités</h2>
+                    <ul class="with-puce">
+                        <li>Autonomie</li>
+                        <li>Organisation</li>
+                        <li>Travail en équipe</li>
+                        <li>Rigueur</li>
+                    </ul>
+                </section>
+                <section class="section-gauche">
+                    <h2>Centres d'intérêt</h2>
+                    <ul class="with-puce">
+                        <li>Course</li>
+                        <li>Natation</li>
+                        <li>Informatique</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-content">

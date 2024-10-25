@@ -104,3 +104,51 @@ footer{
     font-style: italic;
     margin-top: 5px;
 }
+/* Les règles CSS pour le core de la page */
+.grid-core{
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    display: grid;
+    background: #ffffff;
+    grid-template-columns: 2fr 5fr;        /* J'ai utilisé le format de colonne pour scindé les deux parties du core */
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+/* Les règles CSS pour le left Side de la page */
+.grid-core .left-side{
+    position: relative;
+    background: #e3e3e3e3;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 40px;
+}
+.left-side h2{
+    color: #17abb3;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.gras{
+    font-weight: bold;
+}
+.without-puce, .without-puce-1{
+    list-style-type: none;
+    padding: 0;
+}
+.with-puce{
+    list-style-type: square;
+}
+.with-puce li::marker{
+    color: #17abb3;
+    font-size: 22px;
+}
+.with-puce li{
+    color: black;
+}
+/* Les règles CSS pour le right Side de la page */
+.grid-core .right-side{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
