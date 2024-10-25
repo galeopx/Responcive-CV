@@ -196,3 +196,19 @@ footer{
     justify-content: space-between;
     margin-bottom: 10px;
 }
+.details{
+    max-width: 80%;
+}
+.parcours h3{
+    margin: 0;
+    font-size: 1em;
+}
+.details p{
+    margin-top: 1px;
+    font-style: italic;
+    font-size: 0.8em;
+}
+.date{                  /* Il semblerait que ces données doivent être alignées avec le nom des diplômes mais j'ai pas réussi */
+    color: #17abb3;
+    white-space: nowrap;
+}
