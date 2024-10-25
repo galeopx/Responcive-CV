@@ -212,3 +212,20 @@ footer{
     color: #17abb3;
     white-space: nowrap;
 }
+/* Les effets à ajouter aux contenus */
+.parcours:hover{
+    background-color: rgba(200, 200, 200, 0.6);
+    border-left: 6px solid #17abb3;
+    padding-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.profile-pic img:hover{
+    cursor: zoom-in;
+}
+.social-link a:hover{
+    opacity: 0.6;
+}
+header,main,footer:hover{
+    cursor: default;
+}
