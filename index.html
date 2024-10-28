@@ -1,17 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./assets/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>CV PRIOUX Galeo</title>
 </head>
 <body>
     <header>
+        <div class="container-header">
+            <div class="profile-pic">
+                <a target="_blank" href="./assets/img/profile-avatar.png">
+                    <img src="./assets/img/profile-avatar.png" alt="Photo de profile">
+                </a>
+            </div>
+            <section class="header-content">
+                <h1>Galéo Prioux</h1>
+                <h2>Développeur Web et Web Mobile</h2>
+                <!-- Attention à bien utiliser la balise <address></address> dédier aux informations de contact -->
+                <div class="contact">
+                    <address>
+                        <a target="_blank" href="mailto:test@gmail.com" class="contact-item">
+                            <img src="./assets/img/email-icon.png" alt="logo email">
+                            <span>test@gmail.com</span>
+                        </a>
+                        <a target="_blank" href="https://www.google.fr/maps" class="contact-item">
+                            <img src="./assets/img/adresse-icon.png" alt="logo maison pour l'adresse">
+                            <span>1 Rue de la paix 75002</span>
+                        </a>
+                        <a target="_blank" href="tel:+336060606" class="contact-item">
+                            <img src="./assets/img/tel-icon.png" alt="logo téléphone">
+                            <span>+33 6 06 06 06 06</span>
+                        </a>
+                    </address>
+                    <!-- Bien sur le permis B de comporte aucun lien donc ne rentre pas dans la balise <address></address> -->
+                    <div class="contact-item">
+                        <img src="./assets/img/car-icon.png" alt="car icon permis B">
+                        <span>Permis B</span>
+                    </div>
+                </div>
+            </section>
+        </div>
     </header>
     <main>
+        <!-- On créé une première div pour définir la grille qui contriendra le principal de la page 'core' -->
+        <div class="grid-core">
+            <!-- Dans le même objectf on définit la partie gauche de la page avec ce quelle contient -->
+            <div class="left-side">
+                <section class="section-gauche">
+                    <!--  On utilise la balise <section></section> pour la sémantique puisque nous avons des titres -->
+                    <h2>Compétences</h2>
+                    <ul class="without-puce-1">
+                        <!-- J'ai utilisé <span></span> pour bien différencier les deux objets -->
+                        <li><span class="gras">HTML</span> <span class="stars"><img src="./assets/img/4-on-5-stars.png"
+                                    alt="stars raiting HTML 4/5"></span></li>
+                        <li><span class="gras">CSS</span> <span class="stars"><img src="./assets/img/4-on-5-stars.png"
+                                    alt="stars raiting CSS 4/5"></span></li>
+                        <li><span class="gras">Javascript</span> <span class="stars"><img
+                                    src="./assets/img/3-on-5-stars.png" alt="stars raiting Javascript 3/5"></span></li>
+                        <li><span class="gras">PHP</span> <span class="stars"><img src="./assets/img/0-5-stars.png"
+                                    alt="stars raiting PHP 0/5"></span></li>
+                    </ul>
+                </section>
+                <!-- Les deux listes without-puce et without-puce-1 étaient une seule et même class mais il me fallait d'autres règles CSS
+                pour pouvoir bien gérer liste without-puce-1 -->
+                <section class="section-gauche">
+                    <h2>Langues</h2>
+                    <ul class="without-puce">
+                        <li><span class="gras">Français</span> Langue maternelle</li>
+                        <li><span class="gras">Anglais</span> Scolaire</li>
+                        <li><span class="gras">Italien</span> Scolaire</li>
+                    </ul>
+                </section>
+                <section class="section-gauche">
+                    <h2>Qualités</h2>
+                    <ul class="with-puce">
+                        <li>Autonomie</li>
+                        <li>Organisation</li>
+                        <li>Travail en équipe</li>
+                        <li>Rigueur</li>
+                    </ul>
+                </section>
+                <section class="section-gauche">
+                    <h2>Centres d'intérêt</h2>
+                    <ul class="with-puce">
+                        <li>Course</li>
+                        <li>Natation</li>
+                        <li>Informatique</li>
+                    </ul>
+                </section>
+            </div>
+            <!-- Comme précédemment on définit la partie droite de la page avec ce quelle contient -->
+            <div class="right-side">
+                <section class="section-right">
+                    <h2>Profil</h2>
+                    <!-- La class="indente" pour donner au texte les règles indentation et texte justifié -->
+                    <p class="indente">Futur diplômé du titre de Développeur Web et Web Mobile du Centre de
+                        Formation Européen,
+                        je suis passionné par l'informatique et très motivé à développer mes compétences dans ce
+                        domaine.
+                        Au cours de ma formation, j'ai acquis des bases solides tout en faisant preuve de rigueur et
+                        d'autonomie. <br>
+                        Je suis maintenant prêt à mettre ces compétences au service de projets concrets.
+                        C'est pourquoi, aujourd'hui, je suis à la recherche de mon premier stage,
+                        dans l'espoir de développer mon esprit d'équipe,
+                        de mieux comprendre les attentes du marché et d'acquérir de nouvelles compétences.
+                    </p>
+                </section>
+                <!-- Les <section></section> ont toutes les mêmes class pour éviter les répétitions CSS, bien sûr le contenu de chacune
+        est différentes -->
+                <section class="section-right">
+                    <h2>Formations</h2>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Titre Professionnel DWWM</h3>
+                            <p>Centre Européen de Formation</p>
+                        </section>
+                        <p class="date">2024/2025 (En cours)</p>
+                    </div>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Licence Maths Info appliquées</h3>
+                            <p>Caen & Lille</p>
+                        </section>
+                        <p class="date">2019/2023</p>
+                    </div>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Baccalauréat Economique et Social - Spé Maths</h3>
+                            <p>Lycée Marcel Gambier</p>
+                        </section>
+                        <p class="date">2019</p>
+                    </div>
+                </section>
+                <section class="section-right">
+                    <h2>Stages</h2>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Commercial</h3>
+                            <p>METRO France</p>
+                        </section>
+                        <p class="date">mars - juillet 2024</p>
+                    </div>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Superviseur d'expérience en sciences cognitives</h3>
+                            <p>Laboratoir Scalab - Lille</p>
+                        </section>
+                        <p class="date">fevrier - mai 2022</p>
+                    </div>
+                </section>
+                <section class="section-right">
+                    <h2>Expériences professionnelles</h2>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Conseillé de vente</h3>
+                            <p>METRO France</p>
+                        </section>
+                        <p class="date">2023/2024</p>
+                    </div>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Résponsable d'équipe</h3>
+                            <p>Parc Lilo Z'Enfants</p>
+                        </section>
+                        <p class="date">mai-septembre 2019/2020/2021</p>
+                    </div>
+                    <div class="parcours">
+                        <section class="details">
+                            <h3>Apprenti cuisinier</h3>
+                            <p>Les Toquées - Lille</p>
+                        </section>
+                        <p class="date">été 2024</p>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
+        <div class="footer-content">
+            <ul class="social-link">
+                <li><a target="_blank" href="https://www.linkedin.com/in/gal%C3%A9o-prioux-445541324/"><img
+                            src="./assets/img/linkdin-icon.png" alt="icon linkedin">
+                    </a></li>
+                <li><a target="_blank" href="https://github.com/galeopx"><img src="./assets/img/github-icon.png"
+                            alt="Icone GitHub">
+                    </a></li>
+            </ul>
+            <p>Mise à jour le : 22/10/2024</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,250 @@
+/* Ces règles CSS s'appliquent à tout le code */
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('/fonts/Raleway-Regular.woff') format('woff');
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('/fonts/Raleway-Bold.woff') format('woff');
+    font-weight: 700;
+}
+  
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-Italic.woff2') format('woff2'),
+        url('/fonts/Raleway-Italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 400;
+}
+*{
+    box-sizing: border-box;
+}
+header, main, footer{
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway", sans-serif;
+    color: #333333;
+}
+h1, h2, h3 h4{
+    font-family: "Lato", sans-serif;
+}
+/* Les règles CSS pour la partie du Header */
+header{
+    background-color: #17abb3;
+    color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.profile-pic{
+    margin-right: 350px;
+    flex-shrink: 0;
+}
+.profile-pic img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;         /* Pour un bord totalement arrondi le % est le plus accurate */
+    border: 5px solid #ffffff;
+}
+.header-content{
+    text-align: center;
+    margin-right: 50px;
+}
+h1{
+    margin: 0;
+    font-size: 3em;
+}
+header h2{
+    margin: 5px 0;
+    font-size: 1.3em;
+}
+.contact {                      /* Pour la partie contact il me semblait plus logique de créer une grille */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 15px ;
+    margin-top: 10px;
+}
+.contact address{                   /* Permet aux élements de suivre la grille */
+    display: contents;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+} 
+.contact-item img {
+    width: 29px;
+    height: 29px;
+    margin-right: 10px;
+}
+/* Les règles CSS pour la partie du footer */
+footer{
+    background-color: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    margin-top: auto;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.social-link{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+.social-link li{
+    display: inline; /* J'ai utiliser un format de liste donc pour les mettre en ligne cela est nécessaire */
+}
+.social-link img{
+    width: 29px;
+    height: 29px;
+}
+.footer-content p{      /* le contenu de la balise <p></p> est en dehors de la classe social link */
+    color: #ffffff;
+    font-size: small;
+    font-style: italic;
+    margin-top: 5px;
+}
+/* Les règles CSS pour le core de la page */
+.grid-core{
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    display: grid;
+    background: #ffffff;
+    grid-template-columns: 2fr 5fr;        /* J'ai utilisé le format de colonne pour scindé les deux parties du core */
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+/* Les règles CSS pour le left Side de la page */
+.grid-core .left-side{
+    position: relative;
+    background: #e3e3e3e3;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 40px;
+}
+.left-side h2{
+    color: #17abb3;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.gras{
+    font-weight: bold;
+}
+.without-puce, .without-puce-1{
+    list-style-type: none;
+    padding: 0;
+}
+.with-puce{
+    list-style-type: square;
+}
+.with-puce li::marker{
+    color: #17abb3;
+    font-size: 22px;
+}
+.with-puce li{
+    color: black;
+}
+.section-gauche {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.section-gauche h2{
+    border-bottom: 1px solid rgba(200, 200, 200, 0.6);
+    padding-bottom: 10px;
+}
+.without-puce-1 li{        /*  Ici on gère la liste avec le étoiles */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -50px;
+    margin-top: -35px;
+    align-items: center;
+}
+.without-puce-1 img{            
+    width: 90px;
+    height: 90px;
+}
+.without-puce li{          /*  Ici la liste des langues avec la langue à gauche et le niveau à droite*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    align-items: center;
+}
+.with-puce{
+    margin-left: -15px;
+}
+/* Les règles CSS pour le right Side de la page */
+.grid-core .right-side{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
+.section-right h2{
+    color: #17abb3;
+    font-size: 1.3em;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.6);
+    padding-bottom: 10px;
+}
+.indente{
+    text-indent: 20px;
+    text-align: justify;
+}
+.parcours{                 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.details{
+    max-width: 80%;
+}
+.parcours h3{
+    margin: 0;
+    font-size: 1em;
+}
+.details p{
+    margin-top: 1px;
+    font-style: italic;
+    font-size: 0.8em;
+}
+.date{                  /* Il semblerait que ces données doivent être alignées avec le nom des diplômes mais j'ai pas réussi */
+    color: #17abb3;
+    white-space: nowrap;
+}
+/* Les effets à ajouter aux contenus */
+.parcours:hover{
+    background-color: rgba(200, 200, 200, 0.6);
+    border-left: 6px solid #17abb3;
+    padding-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.profile-pic img:hover{
+    cursor: zoom-in;
+}
+.social-link a:hover{
+    opacity: 0.6;
+}
+header,main,footer:hover{
+    cursor: default;
+}
